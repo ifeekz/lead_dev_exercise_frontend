@@ -19,7 +19,7 @@ export default function EditOrder() {
 
     useEffect(() => {
         if (!router.isReady) return;
-        if (!userService.userValue) {
+        if (!userService.userValue?.seller_id) {
             router.push('/login');
         }
 
