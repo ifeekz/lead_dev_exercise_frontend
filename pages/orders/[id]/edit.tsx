@@ -80,7 +80,7 @@ export default function EditOrder() {
                                         <form onSubmit={handleSubmit(onSubmit)}>
                                             {errors.apiMessage && (
                                                 <div className={`alert alert-${errors.apiMessage?.type} mt-3 mb-0`}>
-                                                    {errors.apiMessage?.message}
+                                                    Update successful
                                                 </div>
                                             )}
                                             <div className="form-group">
@@ -94,7 +94,7 @@ export default function EditOrder() {
                                                 />
                                                 {errors.shipping_limit_date && (
                                                     <div className="invalid-feedback">
-                                                        {errors.shipping_limit_date?.message}
+                                                        shipping_limit_date is required
                                                     </div>
                                                 )}
                                             </div>
@@ -108,7 +108,7 @@ export default function EditOrder() {
                                                 />
                                                 {errors.price && (
                                                     <div className="invalid-feedback">
-                                                        {errors.price?.message}
+                                                        Price is required
                                                     </div>
                                                 )}
                                             </div>
@@ -122,7 +122,7 @@ export default function EditOrder() {
                                                 />
                                                 {errors.freight_value && (
                                                     <div className="invalid-feedback">
-                                                        {errors.freight_value?.message}
+                                                        freight_value is required
                                                     </div>
                                                 )}
                                             </div>

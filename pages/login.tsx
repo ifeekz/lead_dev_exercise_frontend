@@ -55,7 +55,7 @@ export default () => {
                                 </div>
                                 {errors.apiError && (
                                     <div className="alert alert-danger mt-3 mb-0 text-center">
-                                        {errors.apiError?.message}
+                                        Invalid username or password
                                     </div>
                                 )}
                                 <Form onSubmit={handleSubmit(onSubmit)} className="mt-4">
@@ -69,7 +69,7 @@ export default () => {
                                         </InputGroup>
                                         {errors.username && (
                                             <div className="invalid-feedback">
-                                                {errors.username?.message}
+                                                Username name is required
                                             </div>
                                         )}
                                     </Form.Group>
@@ -84,7 +84,7 @@ export default () => {
                                             </InputGroup>
                                             {errors.password && (
                                                 <div className="invalid-feedback">
-                                                    {errors.password?.message}
+                                                    Password is required
                                                 </div>
                                             )}
                                         </Form.Group>

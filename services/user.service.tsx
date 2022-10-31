@@ -8,7 +8,7 @@ const { publicRuntimeConfig } = getConfig();
 const baseUrl = `${publicRuntimeConfig.apiUrl}`;
 const userData = (typeof window !== 'undefined') ? localStorage.getItem('user') : null;
 const userSubject = new BehaviorSubject(
-    JSON.parse(userData)
+    JSON.parse(userData || '')
 );
 
 const login = async (username: string, password: string) => {
