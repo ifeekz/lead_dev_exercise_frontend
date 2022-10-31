@@ -26,11 +26,13 @@ const PaginationComponent = ({
     };
 
     const onPreviousPageClick = () => {
-        changePage(currentPage => currentPage - 1);
+        currentPage = currentPage - 1
+        changePage(currentPage);
     };
 
     const onNextPageClick = () => {
-        changePage(currentPage => currentPage + 1);
+        currentPage = currentPage + 1
+        changePage(currentPage);
     };
 
     const setLastPageAsCurrent = () => {
