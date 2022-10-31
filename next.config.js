@@ -7,6 +7,9 @@ const nextConfig = {
       ? 'http://localhost:3001/api' // development api
       : 'https://olist-ecommerce-api.herokuapp.com/api' // production api
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
