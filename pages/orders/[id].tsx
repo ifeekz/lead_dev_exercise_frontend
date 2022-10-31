@@ -11,7 +11,7 @@ import Layout from '../../components/Layout';
 import { orderService } from '../../services/order.service';
 import { userService } from '../../services/user.service';
 
-export default function Order(props: any) {
+export default function Order() {
     const [order, setOrder]: Array<any> = useState(null);
     const router = useRouter()
 

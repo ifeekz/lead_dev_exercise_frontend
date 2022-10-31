@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import ReactPaginate from 'react-paginate';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faCog, faHome, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Col, Row, Form, Button, ButtonGroup, Breadcrumb, InputGroup, Dropdown } from 'react-bootstrap';
@@ -11,7 +9,7 @@ import { OrdersTable } from "../components/Tables";
 import { userService } from '../services/user.service';
 import Layout from '../components/Layout';
 
-const Home = (props: any) => {
+const Home = () => {
   const router = useRouter()
 
   useEffect(() => {
