@@ -17,7 +17,7 @@ export default () => {
     const router = useRouter();
 
     useEffect(() => {
-        if (userService.userValue) {
+        if (userService.userValue?.seller_id !== undefined) {
             router.push('/');
         }
 

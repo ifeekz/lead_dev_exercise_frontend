@@ -17,7 +17,7 @@ export default function Order() {
 
     useEffect(() => {
         if (!router.isReady) return;
-        if (!userService.userValue?.seller_id) {
+        if (!userService.userValue?.seller_id === undefined) {
             router.push('/login');
         }
 
