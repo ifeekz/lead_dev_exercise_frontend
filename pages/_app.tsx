@@ -1,6 +1,5 @@
-// import '../styles/globals.css';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/scss/volt.scss";
+import "../styles/pagination.css";
 import "nprogress/nprogress.css";
 import { useEffect } from "react";
 import type { AppProps } from 'next/app';
